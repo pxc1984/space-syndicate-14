@@ -244,6 +244,20 @@
 
 - type: entity
   parent: IDCardStandard
+  id: BlueShieldIDCard
+  name: blue shield ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: idblueshield
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: BlueShield
+
+- type: entity
+  parent: IDCardStandard
   id: ClownIDCard
   name: clown ID card
   components:

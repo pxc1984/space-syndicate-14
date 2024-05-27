@@ -447,6 +447,22 @@
 
 - type: entity
   parent: BasePDA
+  id: BlueShieldPDA
+  name: blueshield PDA
+  description: Smells like courage and wiskey.
+  components:
+  - type: Pda
+    id: BlueShieldIDCard
+    state: pda-blueshield
+  - type: PdaBorderColor
+    borderColor: "#00376a"
+    accentHColor: "#FFFFFF"
+    accentVColor: "#FFFFFF"
+  - type: Icon
+    state: pda-blueshield
+
+- type: entity
+  parent: BasePDA
   id: HoPPDA
   name: head of personnel PDA
   description: Looks like it's been chewed on.

@@ -18,7 +18,7 @@
       time: 36000 # 10 hours
   startingGear: BlueShieldGear # TODO: make this gear
   icon: "JobIconBlueShield" # TODO: sprite this icon
-  supervisors: job-supervisors-centcomm
+  supervisors: job-supervisors-centcom
   canBeAntag: false
   access:
   - Security
@@ -38,7 +38,7 @@
   equipment:
     eyes: ClothingEyesGlassesSecurity # TODO: make blueshield glasses
     ears: ClothingHeadsetAltCommand # TODO: make blueshield headset with sec, med and command
-    id: CaptainPDA # TODO: make a blueshield pda
+    id: BlueShieldPDA
     pocket1: WeaponPistolMk58 # TODO: make AEG - advanced energy gun
     shoes: ClothingShoesBootsCombatFilled
     gloves: ClothingHandsGlovesCombat

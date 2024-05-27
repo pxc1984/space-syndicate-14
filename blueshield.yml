@@ -19,79 +19,79 @@
 #             # Captain: [ -1, -1 ]
 #             BlueShield: [ -1, -1 ]
 
-- type: loadout
-  id: BlueShieldBeret
-  equipment:
-    head: ClothingHeadHatERTLeaderBeret # TODO: make custom beret prototype
-
-- type: loadout
-  id: MercenaryBeret
-  equipment:
-    head: ClothingHeadHatBeretMerc
-
-- type: loadout
-  id: BlueShieldNanotrasenCape
-  equipment:
-    neck: ClothingNeckCloakNanotrasen
-
-- type: loadout
-  id: BS_ERTLeaderJumpSuit
-  equipment:
-    jumpsuit: ClothingUniformJumpsuitERTLeader
+# - type: loadout
+#   id: BlueShieldBeret
+#   equipment:
+#     head: ClothingHeadHatERTLeaderBeret # TODO: make custom beret prototype
 
 # - type: loadout
-#   id: BS_ERTOfficerJumpSuit
+#   id: MercenaryBeret
 #   equipment:
-#     jumpsuit: ClothingUniformJumpsuitERTSecurity
+#     head: ClothingHeadHatBeretMerc
 
-- type: loadout
-  id: DuffelMilitary
-  equipment:
-    back: ClothingBackpackDuffelMilitary
+# - type: loadout
+#   id: BlueShieldNanotrasenCape
+#   equipment:
+#     neck: ClothingNeckCloakNanotrasen
 
-- type: loadout
-  id: BackpackMilitary
-  equipment:
-    back: ClothingMilitaryBackpack
+# - type: loadout
+#   id: BS_ERTLeaderJumpSuit
+#   equipment:
+#     jumpsuit: ClothingUniformJumpsuitERTLeader
 
-- type: loadout
-  id: SatchelMilitary
-  equipment:
-    back: ClothingBackpackMilitarySatchel
+# # - type: loadout
+# #   id: BS_ERTOfficerJumpSuit
+# #   equipment:
+# #     jumpsuit: ClothingUniformJumpsuitERTSecurity
 
-# ClothingUniformJumpsuitERTSecurity
+# - type: loadout
+#   id: DuffelMilitary
+#   equipment:
+#     back: ClothingBackpackDuffelMilitary
 
-# LoadoutGroups
+# - type: loadout
+#   id: BackpackMilitary
+#   equipment:
+#     back: ClothingMilitaryBackpack
 
-- type: loadoutGroup
-  id: BlueShieldHead
-  name: loadout-group-blue-shield-head
-  minLimit: 0
-  loadouts:
-  - BlueShieldBeret
-  - MercenaryBeret
+# - type: loadout
+#   id: SatchelMilitary
+#   equipment:
+#     back: ClothingBackpackMilitarySatchel
 
-- type: loadoutGroup
-  id: BLueShieldHeck
-  name: loadout-group-blue-shield-neck
-  minLimit: 0
-  loadouts:
-  - BlueShieldNanotrasenCape
+# # ClothingUniformJumpsuitERTSecurity
 
-- type: loadoutGroup
-  id: BlueShieldJumpSuit
-  name: loadout-group-blue-shield-jumpsuit
-  loadouts:
-  - BS_ERTLeaderJumpSuit
-  # - BS_ERTOfficerJumpSuit
+# # LoadoutGroups
 
-- type: loadoutGroup
-  id: BlueShieldBackpack
-  name: loadout-group-blue-shield-backpack
-  loadouts:
-  - DuffelMilitary
-  - BackpackMilitaryMilitary
-  - SatchelMilitary
+# - type: loadoutGroup
+#   id: BlueShieldHead
+#   name: loadout-group-blue-shield-head
+#   minLimit: 0
+#   loadouts:
+#   - BlueShieldBeret
+#   - MercenaryBeret
+
+# - type: loadoutGroup
+#   id: BLueShieldHeck
+#   name: loadout-group-blue-shield-neck
+#   minLimit: 0
+#   loadouts:
+#   - BlueShieldNanotrasenCape
+
+# - type: loadoutGroup
+#   id: BlueShieldJumpSuit
+#   name: loadout-group-blue-shield-jumpsuit
+#   loadouts:
+#   - BS_ERTLeaderJumpSuit
+#   # - BS_ERTOfficerJumpSuit
+
+# - type: loadoutGroup
+#   id: BlueShieldBackpack
+#   name: loadout-group-blue-shield-backpack
+#   loadouts:
+#   - DuffelMilitary
+#   - BackpackMilitaryMilitary
+#   - SatchelMilitary
 
 # Role Loadout
 
@@ -150,21 +150,51 @@
 #   - !type:AddImplantSpecial
 #     implants: [ MindShieldImplant ]
 
-# - type: startingGear
-#   id: BlueShieldGear
-#   equipment:
-#     eyes: ClothingEyesGlassesSecurity # TODO: make blueshield glasses
-#     ears: ClothingHeadsetAltCommand # TODO: make blueshield headset with sec, med and command
-#     id: CaptainPDA # TODO: make a blueshield pda
-#     pocket1: WeaponPistolMk58 # TODO: make AEG - advanced energy gun
-#     shoes: ClothingShoesBootsCombatFilled
-#     gloves: ClothingHandsGlovesCombat
-#     # Without loadouts for now
-#     neck: ClothingNeckCloakNanotrasen
-#     back: ClothingBackpackDuffelMilitary
-#     jumpsuit: ClothingUniformJumpsuitERTLeader
-#     head: ClothingHeadHatERTLeaderBeret
-#     # TODO: make blueshield webbing
+- type: startingGear
+  id: BlueShieldGear
+  equipment:
+    eyes: ClothingEyesGlassesSecurity # TODO: make blueshield glasses
+    ears: ClothingHeadsetAltCommand # TODO: make blueshield headset with sec, med and command
+    id: BlueShieldPDA
+    pocket1: WeaponPistolMk58 # TODO: make AEG - advanced energy gun
+    shoes: ClothingShoesBootsCombatFilled
+    gloves: ClothingHandsGlovesCombat
+    # Without loadouts for now
+    neck: ClothingNeckCloakNanotrasen
+    back: ClothingBackpackDuffelMilitary
+    jumpsuit: ClothingUniformJumpsuitERTLeader
+    head: ClothingHeadHatERTLeaderBeret
+    # TODO: make blueshield webbing
+
+# - type: entity
+#   parent: BasePDA
+#   id: BlueShieldPDA
+#   name: blueshield PDA
+#   description: Smells like courage and wiskey.
+#   components:
+#   - type: Pda
+#     id: BlueShieldIDCard
+#     state: pda-blueshield
+#   - type: PdaBorderColor
+#     borderColor: "#00376a"
+#     accentHColor: "#FFFFFF"
+#     accentVColor: "#FFFFFF"
+#   - type: Icon
+#     state: pda-blueshield
+
+# - type: entity
+#   parent: IDCardStandard
+#   id: BlueShieldIDCard
+#   name: blue shield ID card
+#   components:
+#   - type: Sprite
+#     layers:
+#     - state: silver
+#     - state: idblueshield
+#   - type: Item
+#     heldPrefix: silver
+#   - type: PresetIdCard
+#     job: BlueShield
 
 # - type: entity
 #   id: SpawnPointBlueShield
