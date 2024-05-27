@@ -70,6 +70,17 @@
 
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlueShield
+  name: Blue Shield Uniform
+  description: A special suit made for the best of the elite bodyguards under CentCom.
+  components:
+  - type: Sprite
+    sprite: Clothing/Uniforms/Jumpsuit/blue_shield_uniform.rsi
+  - type: Clothing
+    sprite: Clothing/Uniforms/Jumpsuit/blue_shield_uniform.rsi
+
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCargo
   name: cargo tech jumpsuit
   description: A sturdy jumpsuit, issued to members of the Cargo department.

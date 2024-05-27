@@ -45,6 +45,6 @@
     # Without loadouts for now
     neck: ClothingNeckCloakNanotrasen
     back: ClothingBackpackDuffelMilitary
-    jumpsuit: ClothingUniformJumpsuitERTLeader
+    jumpsuit: ClothingUniformJumpsuitBlueShield
     head: ClothingHeadHatERTLeaderBeret
     # TODO: make blueshield webbing
