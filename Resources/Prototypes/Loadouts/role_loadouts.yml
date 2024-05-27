@@ -22,6 +22,15 @@
   - Trinkets
   - Inventory # Corvax-Loadouts
 
+- type: roleLoadout
+  id: JobBlueShield
+  groups:
+  - BlueShieldNeckLoadoutGroup
+  - BlueShieldBackpackLoadoutGroup
+  - BlueShieldHeadLoadoutGroup
+  - Trinkets
+  - Inventory # Corvax-Loadouts
+
 # Civilian
 - type: roleLoadout
   id: JobPassenger

@@ -1,0 +1,45 @@
+- type: loadout
+  id: NanoTrasenCapeLoadout
+  equipment: NanoTrasenCapeLoadout
+
+- type: loadout
+  id: DuffelMilitaryLoadout
+  equipment: DuffelMilitaryLoadout
+
+- type: loadout
+  id: BackpackMilitaryLoadout
+  equipment: BackpackMilitaryLoadout
+
+- type: loadout
+  id: SatchelMilitaryLoadout
+  equipment: SatchelMilitaryLoadout
+
+- type: loadout
+  id: BlueShieldBeretLoadout
+  equipment: BlueShieldBeretLoadout
+
+
+- type: startingGear
+  id: NanoTrasenCapeLoadout
+  equipment:
+    neck: ClothingNeckCloakNanotrasen
+
+- type: startingGear
+  id: DuffelMilitaryLoadout
+  equipment:
+    back: ClothingBackpackDuffelMilitary
+
+- type: startingGear
+  id: BackpackMilitaryLoadout
+  equipment:
+    back: ClothingMilitaryBackpack
+
+- type: startingGear
+  id: SatchelMilitaryLoadout
+  equipment:
+    back: ClothingBackpackMilitarySatchel
+
+- type: startingGear
+  id: BlueShieldBeretLoadout
+  equipment:
+    head: ClothingHeadHatBlueShieldBeret

@@ -36,16 +36,12 @@
 - type: startingGear
   id: BlueShieldGear
   equipment:
-    eyes: ClothingEyesGlassesBlueShield
-    ears: ClothingHeadsetAltCommand
-    id: BlueShieldPDA
-    pocket1: WeaponPistolMk58
     shoes: ClothingShoesBootsCombatFilled
+    eyes: ClothingEyesGlassesBlueShield
     gloves: ClothingHandsGlovesCombat
-    # Without loadouts for now
-    outerClothing: ClothingOuterVestArmorBlueShield
-    neck: ClothingNeckCloakNanotrasen
-    back: ClothingBackpackDuffelMilitary
+    id: BlueShieldPDA
+    ears: ClothingHeadsetAltCommand
     jumpsuit: ClothingUniformJumpsuitBlueShield
-    head: ClothingHeadHatBlueShieldBeret
+    outerClothing: ClothingOuterVestArmorBlueShield
     belt: ClothingBeltBlueShieldWebbingFilled
+    pocket1: WeaponPistolMk58 # TODO: make AEG (advanced energy gun)

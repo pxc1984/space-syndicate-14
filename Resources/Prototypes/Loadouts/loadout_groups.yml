@@ -109,11 +109,33 @@
   - HoPBackpackIan
 
 - type: loadoutGroup
-  id: HoPOuterClothing
+  id: HoPOuterClothingLoadoutGroup
   name: loadout-group-hop-outerclothing
   minLimit: 0
   loadouts:
   - HoPWintercoat
+
+- type: loadoutGroup
+  id: BlueShieldNeckLoadoutGroup
+  name: loadout-group-blue-shield-neck
+  minLimit: 0
+  loadouts:
+  - NanoTrasenCapeLoadout
+
+- type: loadoutGroup
+  id: BlueShieldBackpackLoadoutGroup
+  name: loadout-group-blue-shield-backpack
+  loadouts:
+  - DuffelMilitaryLoadout
+  - BackpackMilitaryLoadout
+  - SatchelMilitaryLoadout
+
+- type: loadoutGroup
+  id: BlueShieldHeadLoadoutGroup
+  name: loadout-group-blue-shield-head
+  minLimit: 0
+  loadouts:
+  - BlueShieldBeretLoadout
 
 # Civilian
 - type: loadoutGroup
