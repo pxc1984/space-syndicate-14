@@ -183,6 +183,35 @@
 
 - type: entity
   parent: ClothingEyesBase
+  id: ClothingEyesGlassesBlueShield
+  name: blue shield glasses
+  description: Upgraded sunglasses that provide flash immunity, security HUD and medical HUD.
+  components:
+  - type: Sprite
+    sprite: Clothing/Eyes/Glasses/blueshieldglasses.rsi
+  - type: Clothing
+    sprite: Clothing/Eyes/Glasses/blueshieldglasses.rsi
+  - type: FlashImmunity
+  - type: EyeProtection
+    protectionTime: 5
+  - type: Tag
+    tags:
+    - HamsterWearable
+    - WhitelistChameleon
+  - type: GuideHelp
+    guides:
+    - Security
+    - Medical
+  - type: IdentityBlocker
+    coverage: EYES
+  - type: ShowHealthBars
+    damageContainers:
+    - Biological
+  - type: ShowJobIcons
+  - type: ShowMindShieldIcons
+
+- type: entity
+  parent: ClothingEyesBase
   id: ClothingEyesGlassesMercenary
   name: mercenary glasses
   description: Glasses made for combat, to protect the eyes from bright blinding flashes.

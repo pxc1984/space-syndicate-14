@@ -16,8 +16,8 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 36000 # 10 hours
-  startingGear: BlueShieldGear # TODO: make this gear
-  icon: "JobIconBlueShield" # TODO: sprite this icon
+  startingGear: BlueShieldGear
+  icon: "JobIconBlueShield"
   supervisors: job-supervisors-centcom
   canBeAntag: false
   access:
@@ -36,7 +36,7 @@
 - type: startingGear
   id: BlueShieldGear
   equipment:
-    eyes: ClothingEyesGlassesSecurity # TODO: make blueshield glasses
+    eyes: ClothingEyesGlassesBlueShield
     ears: ClothingHeadsetAltCommand # TODO: make blueshield headset with sec, med and command
     id: BlueShieldPDA
     pocket1: WeaponPistolMk58 # TODO: make AEG - advanced energy gun
