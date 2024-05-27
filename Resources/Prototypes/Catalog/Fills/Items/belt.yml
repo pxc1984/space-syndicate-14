@@ -132,6 +132,24 @@
       - CaptainSabre
 
 - type: entity
+  id: ClothingBeltBlueShieldWebbingFilled
+  parent: ClothingBeltBlueShieldWebbing
+  name: chest rig
+  description: A set of tactical webbing worn by Nanotrasen elite bodyguards.
+  suffix: Filled
+  components:
+  - type: StorageFill
+    contents:
+      - id: MedkitCombatFilled
+        amount: 1
+      - id: Handcuffs
+        amount: 3
+      - id: EmergencyMedipen
+        amount: 2
+      - id: Stunbaton
+        amount: 1
+
+- type: entity
   id: ClothingBeltMilitaryWebbingGrenadeFilled
   parent: ClothingBeltMilitaryWebbing
   name: grenadier chest rig

@@ -37,14 +37,15 @@
   id: BlueShieldGear
   equipment:
     eyes: ClothingEyesGlassesBlueShield
-    ears: ClothingHeadsetAltCommand # TODO: make blueshield headset with sec, med and command
+    ears: ClothingHeadsetAltCommand
     id: BlueShieldPDA
-    pocket1: WeaponPistolMk58 # TODO: make AEG - advanced energy gun
+    pocket1: WeaponPistolMk58
     shoes: ClothingShoesBootsCombatFilled
     gloves: ClothingHandsGlovesCombat
     # Without loadouts for now
+    outerClothing: ClothingOuterVestArmorBlueShield
     neck: ClothingNeckCloakNanotrasen
     back: ClothingBackpackDuffelMilitary
     jumpsuit: ClothingUniformJumpsuitBlueShield
-    head: ClothingHeadHatERTLeaderBeret
-    # TODO: make blueshield webbing
+    head: ClothingHeadHatBlueShieldBeret
+    belt: ClothingBeltBlueShieldWebbingFilled

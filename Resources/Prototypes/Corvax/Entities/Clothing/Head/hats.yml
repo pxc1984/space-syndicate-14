@@ -44,6 +44,17 @@
 
 - type: entity
   parent: ClothingHeadBase
+  id: ClothingHeadHatBlueShieldBeret
+  name: blue shield beret
+  description: A blue beret made of durathread, denoting its owner as an elite NanoTrasen bodyguard.
+  components:
+    - type: Sprite
+      sprite: Corvax/Clothing/Head/Hats/blue_shield_beret.rsi
+    - type: Clothing
+      sprite: Corvax/Clothing/Head/Hats/blue_shield_beret.rsi
+
+- type: entity
+  parent: ClothingHeadBase
   id: ClothingHeadHatCapHoS
   name: head of security cap
   description: The robust standard-issue cap of the Head of Security. For showing the officers who's in charge.

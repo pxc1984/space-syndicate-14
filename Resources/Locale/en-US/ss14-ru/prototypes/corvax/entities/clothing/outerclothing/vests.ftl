@@ -4,3 +4,5 @@ ent-ClothingOuterVestArmorMedSec = security medic armor vest
     .desc = A security medic's armor vest, with little pockets for little things.
 ent-ClothingOuterVestSecurityMedic = security medic vest
     .desc = A lightweight vest worn by the Security Medic.
+ent-ClothingOuterVestArmorSec = blue shield's armor vest
+    .desc = A medium Type II armored vest that provides decent protection against most types of damage.

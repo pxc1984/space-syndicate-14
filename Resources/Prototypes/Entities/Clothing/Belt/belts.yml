@@ -654,6 +654,19 @@
     damageCoefficient: 0.5
 
 - type: entity
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
+  id: ClothingBeltBlueShieldWebbing
+  name: chest rig
+  description: A set of tactical webbing worn by Nanotrasen elite bodyguards.
+  components:
+  - type: Sprite
+    sprite: Clothing/Belt/militarywebbingblueshield.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/militarywebbingblueshield.rsi
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+
+- type: entity
   parent: ClothingBeltMilitaryWebbing
   id: ClothingBeltMilitaryWebbingMed
   name: medical chest rig
