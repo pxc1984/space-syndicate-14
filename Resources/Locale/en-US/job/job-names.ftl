@@ -2,6 +2,7 @@ job-name-warden = Warden
 job-name-security = Security Officer
 job-name-cadet = Security Cadet
 job-name-hos = Head of Security
+job-name-blue-shield = Blue Shield
 job-name-detective = Detective
 job-name-brigmedic = Brigmedic
 job-name-borg = Cyborg

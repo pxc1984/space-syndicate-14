@@ -27,6 +27,7 @@ job-description-ertmedic = Ensure that the crew of the station is kept alive and
 job-description-ertsecurity = Ensure that any active threats to the station are put to rest.
 job-description-hop = Handle access reassignment fairly using your ID console, manage the service department, and keep Ian safe.
 job-description-hos = Manage your security force and keep them efficient, quell dissent, and keep the other heads of staff safe.
+job-description-blue-shield = Be the personal bodyguard of heads, protecting them from all sorts of threats. Do not engage in security work, it should not burden you.
 job-description-intern = Learn the basics of administering medicine, basic chemicals and using medical tools.
 job-description-janitor = Keep the station clean of any trash or slipping hazards, and help deal with rat infestations.
 job-description-lawyer = Ensure that every prisoner or criminal receives a fair judgment and trial if necessary.

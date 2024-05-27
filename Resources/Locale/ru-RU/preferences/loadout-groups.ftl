@@ -12,6 +12,10 @@ loadout-group-hop-jumpsuit = Глава персонала, комбинезон
 loadout-group-hop-neck = Глава персонала, шея
 loadout-group-hop-backpack = Глава персонала, рюкзак
 loadout-group-hop-outerclothing = Глава персонала, верхняя одежда
+loadout-group-blue-shield-head = Синий Щит, голова
+loadout-group-blue-shield-neck = Синий Щит, шея
+loadout-group-blue-shield-jumpsuit = Синий Щит, комбинезон
+loadout-group-blue-shield-backpack = Синий Щит, рюкзак
 # Civilian
 loadout-group-passenger-jumpsuit = Пассажир, комбинезон
 loadout-group-passenger-mask = Пассажир, маска

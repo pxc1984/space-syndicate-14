@@ -15,6 +15,10 @@ loadout-group-hop-neck = Head of Personnel neck
 loadout-group-hop-backpack = Head of Personnel backpack
 loadout-group-hop-outerclothing = Head of Personnel outer clothing
 
+loadout-group-blue-shield-head = Blue Shield head
+loadout-group-blue-shield-neck = Blue Shield neck
+loadout-group-blue-shield-jumpsuit = Blue Shield jumpsuit
+loadout-group-blue-shield-backpack = Blue Shield backpack
 # Civilian
 loadout-group-passenger-jumpsuit = Passenger jumpsuit
 loadout-group-passenger-mask = Passenger mask

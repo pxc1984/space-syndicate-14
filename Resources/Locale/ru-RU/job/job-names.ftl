@@ -2,6 +2,7 @@ job-name-warden = смотритель
 job-name-security = офицер СБ
 job-name-cadet = кадет СБ
 job-name-hos = глава службы безопасности
+job-name-blue-shield = офицер Синий Щит
 job-name-detective = детектив
 job-name-brigmedic = бригмедик
 job-name-borg = киборг
