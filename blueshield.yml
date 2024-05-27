@@ -1,0 +1,179 @@
+# Сюда я буду писать все прототипы перед тем как их распихивать по директориям
+
+# - type: gameMap
+#   id: BlueShieldDebug
+#   mapName: BSDebug
+#   mapPath: Maps/blueshieldtest.yml
+#   minPlayers: 0
+#   stations:
+#     Dev:
+#       stationProto: StandardNanotrasenStation
+#       components:
+#         - type: StationNameSetup
+#           mapNameTemplate: "Dev"
+#         - type: StationJobs
+#           overflowJobs:
+#           # - Captain
+#           - BlueShield
+#           availableJobs:
+#             # Captain: [ -1, -1 ]
+#             BlueShield: [ -1, -1 ]
+
+- type: loadout
+  id: BlueShieldBeret
+  equipment:
+    head: ClothingHeadHatERTLeaderBeret # TODO: make custom beret prototype
+
+- type: loadout
+  id: MercenaryBeret
+  equipment:
+    head: ClothingHeadHatBeretMerc
+
+- type: loadout
+  id: BlueShieldNanotrasenCape
+  equipment:
+    neck: ClothingNeckCloakNanotrasen
+
+- type: loadout
+  id: BS_ERTLeaderJumpSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitERTLeader
+
+# - type: loadout
+#   id: BS_ERTOfficerJumpSuit
+#   equipment:
+#     jumpsuit: ClothingUniformJumpsuitERTSecurity
+
+- type: loadout
+  id: DuffelMilitary
+  equipment:
+    back: ClothingBackpackDuffelMilitary
+
+- type: loadout
+  id: BackpackMilitary
+  equipment:
+    back: ClothingMilitaryBackpack
+
+- type: loadout
+  id: SatchelMilitary
+  equipment:
+    back: ClothingBackpackMilitarySatchel
+
+# ClothingUniformJumpsuitERTSecurity
+
+# LoadoutGroups
+
+- type: loadoutGroup
+  id: BlueShieldHead
+  name: loadout-group-blue-shield-head
+  minLimit: 0
+  loadouts:
+  - BlueShieldBeret
+  - MercenaryBeret
+
+- type: loadoutGroup
+  id: BLueShieldHeck
+  name: loadout-group-blue-shield-neck
+  minLimit: 0
+  loadouts:
+  - BlueShieldNanotrasenCape
+
+- type: loadoutGroup
+  id: BlueShieldJumpSuit
+  name: loadout-group-blue-shield-jumpsuit
+  loadouts:
+  - BS_ERTLeaderJumpSuit
+  # - BS_ERTOfficerJumpSuit
+
+- type: loadoutGroup
+  id: BlueShieldBackpack
+  name: loadout-group-blue-shield-backpack
+  loadouts:
+  - DuffelMilitary
+  - BackpackMilitaryMilitary
+  - SatchelMilitary
+
+# Role Loadout
+
+# - type: roleLoadout
+#   id: JobBlueShield
+#   groups:
+#   - BlueShieldHead
+#   - BlueShieldNeck
+#   - BlueShieldJumpSuit
+#   - BlueShieldBackpack
+#   - Trinklets
+#   - Inventory
+
+# - type: playTimeTracker
+#   id: JobBlueShield
+
+# - type: statusIcon
+#   parent: JobIcon
+#   id: JobIconBlueShield
+#   icon:
+#     sprite: /Textures/Interface/Misc/job_icons.rsi
+#     state: BlueShield
+
+# - type: job
+#   id: BlueShield
+#   name: job-name-blue-shield
+#   description: job-description-blue-shield
+#   playTimeTracker: JobBlueShield
+#   weight: 20
+#   requirements:
+#     - !type:OverallPlaytimeRequirement
+#       time: 180000 # 50 hours
+#     - !type:DepartmentTimeRequirement
+#       department: Security
+#       time: 72000 # 20 hours
+#     - !type:DepartmentTimeRequirement
+#       department: Command
+#       time: 36000 # 10 hours
+#     - !type:DepartmentTimeRequirement
+#       department: Medical
+#       time: 36000 # 10 hours
+#   startingGear: BlueShieldGear
+#   icon: "JobIconBlueShield"
+#   supervisors: job-supervisors-centcomm
+#   canBeAntag: false
+#   access:
+#   - Security
+#   - Brig
+#   - Maintenance
+#   - Service
+#   - External
+#   - Cryogenics
+#   - Command
+#   - Medical
+#   special:
+#   - !type:AddImplantSpecial
+#     implants: [ MindShieldImplant ]
+
+# - type: startingGear
+#   id: BlueShieldGear
+#   equipment:
+#     eyes: ClothingEyesGlassesSecurity # TODO: make blueshield glasses
+#     ears: ClothingHeadsetAltCommand # TODO: make blueshield headset with sec, med and command
+#     id: CaptainPDA # TODO: make a blueshield pda
+#     pocket1: WeaponPistolMk58 # TODO: make AEG - advanced energy gun
+#     shoes: ClothingShoesBootsCombatFilled
+#     gloves: ClothingHandsGlovesCombat
+#     # Without loadouts for now
+#     neck: ClothingNeckCloakNanotrasen
+#     back: ClothingBackpackDuffelMilitary
+#     jumpsuit: ClothingUniformJumpsuitERTLeader
+#     head: ClothingHeadHatERTLeaderBeret
+#     # TODO: make blueshield webbing
+
+# - type: entity
+#   id: SpawnPointBlueShield
+#   parent: SpawnPointJobBase
+#   name: blueshield
+#   components:
+#   - type: SpawnPoint
+#     job_id: BlueShield
+#   - type: Sprite
+#     layers:
+#       - state: green
+#       - state: security_officer
