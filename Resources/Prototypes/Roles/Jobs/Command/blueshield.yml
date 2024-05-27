@@ -1,0 +1,50 @@
+- type: job
+  id: BlueShield
+  name: job-name-blue-shield
+  description: job-description-blue-shield
+  playTimeTracker: JobBlueShield
+  weight: 20
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 180000 # 50 hours
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 72000 # 20 hours
+    - !type:DepartmentTimeRequirement
+      department: Command
+      time: 36000 # 10 hours
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 36000 # 10 hours
+  startingGear: BlueShieldGear # TODO: make this gear
+  icon: "JobIconBlueShield" # TODO: sprite this icon
+  supervisors: job-supervisors-centcomm
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - Service
+  - External
+  - Cryogenics
+  - Command
+  - Medical
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: BlueShieldGear
+  equipment:
+    eyes: ClothingEyesGlassesSecurity # TODO: make blueshield glasses
+    ears: ClothingHeadsetAltCommand # TODO: make blueshield headset with sec, med and command
+    id: CaptainPDA # TODO: make a blueshield pda
+    pocket1: WeaponPistolMk58 # TODO: make AEG - advanced energy gun
+    shoes: ClothingShoesBootsCombatFilled
+    gloves: ClothingHandsGlovesCombat
+    # Without loadouts for now
+    neck: ClothingNeckCloakNanotrasen
+    back: ClothingBackpackDuffelMilitary
+    jumpsuit: ClothingUniformJumpsuitERTLeader
+    head: ClothingHeadHatERTLeaderBeret
+    # TODO: make blueshield webbing
